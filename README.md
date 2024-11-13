@@ -57,8 +57,10 @@ Select the IP address; it should be 0.0.0.0 because the IP has not been set yet.
 Use the 'admin' login and the new password that was set previously  
 ![20](https://github.com/user-attachments/assets/680772b6-63c4-4ffb-9b04-891ce13c8ee0)  
 Like this one  
-### Configure MikroTik
+### Configure MikroTik  
+Click on 'Interfaces' and rename ether1 to ether1-Internet and ether2 to ether2-Client  
 ![21](https://github.com/user-attachments/assets/f00aafc2-eeb0-4c82-9678-2e2f87295ba1)  
+  
 ![21-2](https://github.com/user-attachments/assets/7eb3a0e6-703c-4aab-adad-a181d4eeb241)  
 ![22](https://github.com/user-attachments/assets/6aa0dda5-50a9-457e-8baa-f9bebce51ec8)  
 ![23](https://github.com/user-attachments/assets/3499c175-01e7-448b-b034-07887302e2b1)  
