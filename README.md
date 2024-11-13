@@ -24,13 +24,22 @@ NAT (Network Address Translation) is chosen in VirtualBox to provide internet ac
 ![8](https://github.com/user-attachments/assets/7cbda8ed-56ae-4610-b1bb-6cd11c701576)  
 #### Enable Adapter 3 and choose Host-only Adapter (optional)
 ![9](https://github.com/user-attachments/assets/4595c055-7369-4a4d-ae22-bb839354a97d)  
-#### Click OK, and then press Start
+Click OK, and then press Start
+#### Click the icon pointed to by the arrow
 ![10](https://github.com/user-attachments/assets/e1cd91cf-48bb-4834-a91c-dc6fc8d7c979)  
+#### Click Add 
 ![11](https://github.com/user-attachments/assets/c3cca75b-71d2-4773-992e-d7b177d1c8d4)  
+#### Select the MikroTik RouterOS ISO file
 ![12](https://github.com/user-attachments/assets/e98df8b7-2266-4b66-b57e-c7a02a8bd87b)  
+#### Click Choose
 ![13](https://github.com/user-attachments/assets/8598a927-16af-4fc1-9c37-9b51e30f305a)  
+#### Click Start
 ![14](https://github.com/user-attachments/assets/c59b3d5d-2e29-4457-8674-1e76a76e1ee0)  
+#### Choose the software installation option
+In this case, press 'a' to select all, then press 'i' to install  
 ![15](https://github.com/user-attachments/assets/dfd7d6a6-a345-414f-a05c-8114424694eb)  
+Press 'n' for 'Do you want to keep the old configuration?' and then press 'y' to Continue
+
 ![16](https://github.com/user-attachments/assets/6abec516-53a2-4bb5-bff8-c4e36b06b6a8)  
 ![17](https://github.com/user-attachments/assets/4fdc2650-f1ce-40bb-b0f9-3e0ebe7b0cb2)  
 ![17-2](https://github.com/user-attachments/assets/cfaec642-037a-44d1-9fd6-f53aa91264e1)  
