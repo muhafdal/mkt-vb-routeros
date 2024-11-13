@@ -33,9 +33,9 @@ Click Add
 ![11](https://github.com/user-attachments/assets/c3cca75b-71d2-4773-992e-d7b177d1c8d4)  
 Select the MikroTik RouterOS ISO file  
 ![12](https://github.com/user-attachments/assets/e98df8b7-2266-4b66-b57e-c7a02a8bd87b)  
-Click Choose
+Click Choose  
 ![13](https://github.com/user-attachments/assets/8598a927-16af-4fc1-9c37-9b51e30f305a)  
-Click Start
+Click Start  
 ![14](https://github.com/user-attachments/assets/c59b3d5d-2e29-4457-8674-1e76a76e1ee0)  
 Choose the software installation option  
 In this case, press 'a' to select all, then press 'i' to install  
@@ -52,8 +52,12 @@ Press 'n' for 'Do you want to see the software license' option
 ![18](https://github.com/user-attachments/assets/5811a267-f1d7-4cbe-b0bc-99b0d1204d4f)  
 We need to set a new password  
 ![19](https://github.com/user-attachments/assets/ebd1f1c5-6f25-4ec6-af9f-aacd23fb8cd3)  
-### Open WinBox
+### Open WinBox  
+Select the IP address; it should be 0.0.0.0 because the IP has not been set yet. If an error occurs, look for another IP with the same MAC address or the same Board's Port  
+Use the 'admin' login and the new password that was set previously  
 ![20](https://github.com/user-attachments/assets/680772b6-63c4-4ffb-9b04-891ce13c8ee0)  
+Like this one  
+### Configure MikroTik
 ![21](https://github.com/user-attachments/assets/f00aafc2-eeb0-4c82-9678-2e2f87295ba1)  
 ![21-2](https://github.com/user-attachments/assets/7eb3a0e6-703c-4aab-adad-a181d4eeb241)  
 ![22](https://github.com/user-attachments/assets/6aa0dda5-50a9-457e-8baa-f9bebce51ec8)  
