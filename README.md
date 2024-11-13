@@ -57,37 +57,37 @@ Select the IP address; it should be 0.0.0.0 because the IP has not been set yet.
 Use the 'admin' login and the new password that was set previously  
 ![20](https://github.com/user-attachments/assets/680772b6-63c4-4ffb-9b04-891ce13c8ee0)  
 Like this one  
+![21](https://github.com/user-attachments/assets/f00aafc2-eeb0-4c82-9678-2e2f87295ba1)  
 ### Configure MikroTik  
 Click on 'Interfaces' and rename ether1 to ether1-Internet and ether2 to ether2-Client  
-![21](https://github.com/user-attachments/assets/f00aafc2-eeb0-4c82-9678-2e2f87295ba1)  
-Click on 'IP > Addresses > New'. Set the IP address to 10.0.2.20/24 and set the interface to 'ether1-Internet'. To get this IP, I created a Windows virtual machine and set its network adapter to NAT    
 ![21-2](https://github.com/user-attachments/assets/7eb3a0e6-703c-4aab-adad-a181d4eeb241)  
-As we can see, the Windows virtual machine has the IP 10.0.2.15/24, which is in the same network as 10.0.2.20/24  
+Click on 'IP > Addresses > New'. Set the IP address to 10.0.2.20/24 and set the interface to 'ether1-Internet'. To get this IP, I created a Windows virtual machine and set its network adapter to NAT    
 ![WVM](https://github.com/user-attachments/assets/c5f51c85-2c0a-4055-87ec-b60fb625ad6e)  
-Click 'New' again and set the IP address to be used by the client. In this case, I set it to 192.168.14.1/24 and set the interface to 'ether2-Client'  
+As we can see, the Windows virtual machine has the IP 10.0.2.15/24, which is in the same network as 10.0.2.20/24  
 ![22](https://github.com/user-attachments/assets/6aa0dda5-50a9-457e-8baa-f9bebce51ec8)  
-Click on 'IP > DNS' and set the DNS servers to Google's DNS: 8.8.8.8 and 8.8.4.4  
+Click 'New' again and set the IP address to be used by the client. In this case, I set it to 192.168.14.1/24 and set the interface to 'ether2-Client'  
 ![23](https://github.com/user-attachments/assets/3499c175-01e7-448b-b034-07887302e2b1)  
-Click on 'IP > Routes > New' and add the gateway 10.0.2.2, which is the NAT gateway  
+Click on 'IP > DNS' and set the DNS servers to Google's DNS: 8.8.8.8 and 8.8.4.4  
 ![24](https://github.com/user-attachments/assets/6e7d39a3-8045-48fb-9c84-23274c09e751)  
-Click on 'IP > DHCP Server > DHCP Setup', select 'ether2-Client', then click 'Next' until the setup is complete  
+Click on 'IP > Routes > New' and add the gateway 10.0.2.2, which is the NAT gateway  
 ![25](https://github.com/user-attachments/assets/8baefd96-75f4-4a04-bd0c-a10fc6feba9e)  
+Click on 'IP > DHCP Server > DHCP Setup', select 'ether2-Client', then click 'Next' until the setup is complete  
+![26](https://github.com/user-attachments/assets/1e9efcb5-a58b-4d54-ab50-856c8a242406)  
 Click on 'IP > NAT', select 'srcnat' for Chain, and set the Out. Interface to 'ether1-Internet'  
 - srcnat (Source NAT) is used to change the source IP address of outgoing packets, typically to allow devices in a private network to access the internet using the router's public IP  
 - Out. Interface refers to the router interface that sends packets out to the external network, such as the internet. For example, if your router connects to the internet via ether1-Internet, you set Out. Interface to ether1-Internet to apply NAT on packets leaving through that interface  
-![26](https://github.com/user-attachments/assets/1e9efcb5-a58b-4d54-ab50-856c8a242406)  
+![27](https://github.com/user-attachments/assets/23a35bda-06c9-4951-8d39-e05d03bf5c0e)  
 For Action, select 'masquerade'  
 Masquerade is a type of Source NAT that allows devices on a private network to access the internet using the router's public IP address. It changes the source IP of outgoing packets to the router's public IP, making it ideal for networks with dynamic IP addresses  
-![27](https://github.com/user-attachments/assets/23a35bda-06c9-4951-8d39-e05d03bf5c0e)  
-Change Adapter 2 on the MikroTik VM to 'Internal Network'. We can set the name to 'Mikrotik' (optional)  
 ![28](https://github.com/user-attachments/assets/e81104f6-d088-4ecb-b170-f69465944c39)  
-Change Adapter on the Windows VM to 'Internal Network' and set the name to 'Mikrotik' as well  
+Change Adapter 2 on the MikroTik VM to 'Internal Network'. We can set the name to 'Mikrotik' (optional)  
 ![29](https://github.com/user-attachments/assets/dc39ea82-59f3-4996-88dd-22d89ab6d093)  
-Check the IP address on the Windows VM. We get the IP 192.168.14.254 (DHCP)  
+Change Adapter on the Windows VM to 'Internal Network' and set the name to 'Mikrotik' as well  
 ![30](https://github.com/user-attachments/assets/a7fe8036-2a62-4fd8-b927-adb8c6d0ac84)  
-We can also check 'IP > DHCP Server > Leases' to see which client has received the IP  
+Check the IP address on the Windows VM. We get the IP 192.168.14.254 (DHCP)  
 ![31](https://github.com/user-attachments/assets/81e2bde8-58cd-489f-9711-c5821df844ad)  
-Check the ping to the gateway and Google  
+We can also check 'IP > DHCP Server > Leases' to see which client has received the IP  
 ![32](https://github.com/user-attachments/assets/1e0deb10-9f4d-4366-a5e7-5f9d446ea58d)  
+Check the ping to the gateway and Google  
 ![33](https://github.com/user-attachments/assets/02c47b34-a26b-4914-828d-a8acbc2d0fa5)  
   
