@@ -21,7 +21,7 @@ Choose 'Dynamically allocated'
 Set 2 GB (optional)  
 ![7](https://github.com/user-attachments/assets/862cc3b5-6123-469b-936d-85233bf7e88d)  
 Enable both Adapter 1 and Adapter 2, then choose NAT  
-NAT (Network Address Translation) is chosen in VirtualBox to provide internet access to the virtual machine (VM) through the host machine. It allows the VM to share the host's IP address, making it easy to set up without complex network configuration  
+NAT (Network Address Translation) is chosen in VirtualBox to provide internet access to the virtual machine (VM) through the host machine. It allows the VM to share the host's IP address, making it easy to set up without complex network configuration.  
 ![8](https://github.com/user-attachments/assets/7cbda8ed-56ae-4610-b1bb-6cd11c701576)  
 Enable Adapter 3 and choose Host-only Adapter (optional)  
 ![9](https://github.com/user-attachments/assets/4595c055-7369-4a4d-ae22-bb839354a97d)  
@@ -38,7 +38,7 @@ Click Choose
 Click Start  
 ![14](https://github.com/user-attachments/assets/c59b3d5d-2e29-4457-8674-1e76a76e1ee0)  
 Choose the software installation option  
-In this case, press 'a' to select all, then press 'i' to install  
+In this case, press 'a' to select all, then press 'i' to install.  
 ![15](https://github.com/user-attachments/assets/dfd7d6a6-a345-414f-a05c-8114424694eb)  
 Press 'n' for 'Do you want to keep the old configuration?' and then press 'y' to Continue  
 Before rebooting, right-click the icon pointed to by the arrow, then click the MikroTik RouterOS ISO file  
