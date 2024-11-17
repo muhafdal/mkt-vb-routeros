@@ -93,3 +93,7 @@ We can also check 'IP > DHCP Server > Leases' to see which client has received t
 ![32](https://github.com/user-attachments/assets/1e0deb10-9f4d-4366-a5e7-5f9d446ea58d)  
 Check the ping to the gateway and Google  
 ![33](https://github.com/user-attachments/assets/02c47b34-a26b-4914-828d-a8acbc2d0fa5)
+
+
+### Acknowledgements  
+This project was inspired by the Gurutech Networking Training channel on YouTube. [Watch here](https://youtu.be/OMsGPKRLabM?si=deYNErJEqcOB26Tq).  
