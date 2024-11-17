@@ -96,4 +96,4 @@ Check the ping to the gateway and Google
 
 
 ### Acknowledgements  
-This project was inspired by the Gurutech Networking Training channel on YouTube. [Watch here](https://youtu.be/OMsGPKRLabM?si=deYNErJEqcOB26Tq).  
+This project was inspired by the Rendi Suhendri channel on YouTube. [Watch here](https://youtu.be/OMsGPKRLabM?si=deYNErJEqcOB26Tq).  
